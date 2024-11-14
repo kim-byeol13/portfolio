@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+
+    <!-- 폰트 로딩 코드 (Galada 폰트) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Galada&family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
+    <!DOCTYPE html>
+    <html lang="ko">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>영상편집 포트폴리오</title>
+
+        <!-- Patrick Hand 폰트 로딩 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+          rel="stylesheet"
+        />
+
+        <style>
+          body {
+            font-family: "Patrick Hand", cursive; /* 전체 폰트로 Patrick Hand 적용 */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+          }
+
+          header {
+            background-image: url("img/jan-hrdlicka-lKepw6_yvVQ-unsplash.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+          }
+
+          header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #00bfae;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+          }
+
+          nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+          }
+
+          nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+          }
+
+          nav a:hover {
+            background-color: #00bfae;
+          }
+
+          section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+          }
+
+          section h2 {
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 2em;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 0 auto;
+            width: fit-content;
+          }
+
+          section p {
+            font-family: "Arial", sans-serif; /* 기본 시스템 글꼴로 설정 */
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+          }
+
+          footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+          }
+
+          /* 각 섹션마다 높이를 다르게 설정 */
+          #home {
+            min-height: 500px;
+            background-color: #f9f9f9;
+          }
+
+          #about {
+            min-height: 600px;
+            background-color: #fff;
+          }
+
+          #contents {
+            min-height: 800px;
+            background-color: #f4f4f4;
+          }
+
+          #contact {
+            min-height: 400px;
+            background-color: #fff;
+          }
+
+          .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px; /* 영상 간의 간격 */
+          }
+
+          .video-box {
+            width: 32%; /* 3개씩 정렬 */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+          }
+
+          .content-video {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 비율 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-bottom: 10px;
+          }
+
+          .content-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          .video-box h3 {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #00bfae;
+          }
+
+          .video-box p {
+            color: #666;
+          }
+
+          .contact-info {
+            padding: 20px;
+          }
+
+          .contact-info .contact-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(
+              33.333% - 20px
+            ); /* 3개의 컬럼을 균등하게 나누기 위해 width 계산 */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+          }
+
+          .contact-info .contact-box h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+          }
+
+          .contact-info .contact-box p {
+            color: #666;
+            font-size: 1em;
+            margin: 5px 0;
+          }
+        </style>
+      </head>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contents">Contents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <body>
+        <!-- Header -->
+        <header>
+          <h1>PORTPOLIO</h1>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            안녕하세요! 저는 그린컴퓨터디자인학원에 영상편집 과정을 배우고 있는
+            김별입니다 . 이 포트폴리오는 제가 작업한 영상 편집 프로젝트를
+            소개하는 공간입니다.
+          </p>
+        </section>
+
+        <!-- Contents Section (영상들) -->
+        <section id="contents">
+          <h2>My Works</h2>
+          <div class="content-wrapper">
+            <!-- 첫 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>1</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+
+            <!-- 두 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>2</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+
+            <!-- 세 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_3"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>3</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+          </div>
+
+          <div class="content-wrapper">
+            <!-- 네 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>4</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+
+            <!-- 다섯 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_5"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>5</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+
+            <!-- 여섯 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_6"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>6</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+          </div>
+
+          <div class="content-wrapper">
+            <!-- 일곱 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_7"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>7</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+
+            <!-- 여덟 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_8"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>8</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+
+            <!-- 아홉 번째 영상 -->
+            <div class="video-box">
+              <div class="content-video">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_9"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>9</h3>
+              <p>이 영상은 [영상 설명]입니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <div class="contact-info">
+            <div class="contact-box">
+              <h3>Email</h3>
+              <p>이메일: stwr13@gmail.com</p>
+            </div>
+            <div class="contact-box">
+              <h3>Phone</h3>
+              <p>전화: 010-0000-0000</p>
+            </div>
+            <div class="contact-box">
+              <h3>Social Media</h3>
+              <p>Instagram: @yourusername</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <p>&copy; 2024 [KIMBYEOL]. All rights reserved.</p>
+        </footer>
+      </body>
+    </html>
+  </head>
+</html>
